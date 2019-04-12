@@ -109,6 +109,11 @@ export interface ExtraConfiguration {
      * 进度回调
      */
     onProgressUpdate?(res: any): any;
+
+    /**
+     * 超时回调
+     */
+    onTimeout?(retryTimes: number, remained: number): void;
 }
 
 /**
